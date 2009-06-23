@@ -1,3 +1,29 @@
+
+You may wish to grab a copy of git://github.com/lukeweston/ArduinoShield.git
+Now, here we have:
+
+eagle-guide.txt: This document
+
+shield.sch: 
+The schematic file corresponding to the design described below,
+if you'd like the here's-one-we-prepared-earlier version.
+
+There is no associated board file, so we can create the board from scratch,
+starting from a complete schematic, if we like.
+
+shield 2.sch:
+The same schematic, associated with the shield 2.brd board file.
+
+shield 2.brd:
+A board file, with the parts placed on the board in a more appropriate 
+arrangement, but without any tracks routed.
+
+shield 3.sch:
+The exact same schematic again, but associated with the shield 3.brd file.
+
+shield 3.brd:
+A finished, completely routed PCB layout corresponding to this schematic.
+
 First, we'll go to the CadSoft website at 
 http://www.cadsoft.de/download.htm , and download the EAGLE installer.
 Conveniently, EAGLE is available for all three major families of operating
@@ -174,8 +200,6 @@ designs, especially where surface mount components are not used.
 We'll set the alt-grid resolution to 0.0125"; although you can change these
 values if you like. The snap-to-grid resolution can be quickly changed
 on the fly to the smaller scale when you hold down the alt key. 
-
-
 
 
 

@@ -1,4 +1,3 @@
-
 General purpose Arduino sensor/LCD shield
 -----------------------------------------
 
@@ -46,38 +45,50 @@ Arduino pin assignments:
 Parts List / Bill of Materials:
 -------------------------------
 		
-		R1-R5:	6 x 100 k, SMD 0805.
-		R6:	4.7 k, SMD 0805.
-		R7:	69 R, SMD 0805.
-		
-		VR1: 100 k linear pot, 9 mm metric, PCB mounting; eg.			Jaycar RP-8518. 
-		VR2: 100 k linear pot, Spectrol 25-turn 0.1" pitch PCB mount; eg.	Jaycar RT-4656.
-		
-		C1-C2: 2 x 100 nF SMD 0805.
-		
-		LCD1: 16x2 alphanumeric LCD module; Jaycar Electronics QP-5516 is suitable.
-		LED1: 3 mm through-hole LED, green (or whatever colour you like); eg.	Jaycar ZD-0120. 
-		LDR1: Cadmium sulfide light-dependent resistor; eg.			Jaycar RD-3480.
-		
-		IC1: 4094 shift register; SMD SOIC package; eg. Rockby Electronics Stock no. 34707.
-		IC2: DS18B20 1-Wire temperature sensor, TO-92 package; eg.	Digi-Key DS18B20+-ND.
-		IC3: LM1117-3.3 3.3 V voltage regulator, SOT-223 SMD package;	Digi-Key LM1117MP-3.3CT-ND.
-		IC4: XBee RF communication module (choose whichever specific type you like)
-		
-		RY1-RY2: 2 x reed relay, 5 V coil, DIP 0.3" package; eg.		Jaycar SY-4030.
-		S1-S2: 2 x normally-open momentary pushbutton switch, 4 pins; eg.	Jaycar SP-0720.
-		       
-		       (Choose whatever colour you like. Personally, I don't like the "feel" of the
-		       Jaycar SP-0720 style switches; they seem a bit "sticky". I personally prefer to
-		       use something like the (Jaycar) SP-0600 style of switch, as they seem to have a
-		       better tactile response which isn't "sticky". But then again, they are not big and
-		       round and brightly coloured.)
-		
-		14-pin DIL (2 x 7) 0.1" female header socket strip; for mounting LCD;	Digi-Key S7075-ND.
-		2 x 10 pin, 2 mm female SIL header sockets to suit XBee module; eg.	Digi-Key S5751-10-ND. 
-		4-pin 0.1" Phoenix PCB-mount screw-down terminal block; eg.		Digi-Key 277-1275-ND.
-		28-way male 0.1" break-away pin header or wire-wrap socket strip; eg.	Jaycar PI-6472.
-		14-pin DIL (2 x 7) 0.1" break-away pin header strip for mounting LCD;	Jaycar HM-3250.
-		Solid-core wire (eg. 0.7 mm tinned copper wire) for making wire links on PCB.
-		
 
+                1 x XBee module (optional) (choose whichever specific kind you like)
+
+                1 x 20x4 alphanumeric LCD display module
+
+                1 x Dallas DS18B20 1-Wire temperature sensor, TO-92 package
+                (eg. Digi-Key DS18B20+PAR-ND)
+
+                1 x LD1117V33C 3.3V low-dropout voltage regulator, TO-220 package.
+                (eg. Digi-Key 497-1492-5-ND) (optional if XBee is not used.)
+
+                1 x 4094 shift register IC, 16 pin DIP package.
+                eg. Digi-Key 568-4484-5-ND; Jaycar ZC4094.
+
+                2 x 5V reed relays, DIP package, eg. Jaycar SY4030, Digi-Key HE100-ND
+
+                1 x light-dependant resistor, eg. Jaycar RD3480
+
+                1 x 100k linear pot, eg. Jaycar RP8518
+
+                1 x 100k linear trimpot, Jaycar RT4366
+
+                1 x 6-pin 2.54 mm Phoenix screw terminal wire-to-board connector
+                eg. Digi-Key 277-1277-ND (optional)
+
+                4 x momentary pushbutton switches, eg. Digi-Key EG1861-ND
+                (Button/cap to suit above Digi-Key part: Digi-Key EG4364-ND)
+
+                1 x 3 mm through-hole LED, colour to taste.
+
+                2 x 1N4004 diodes, eg. Jaycar ZR1004.
+
+                2 x 100 nF monolithic capacitor, 5.08 mm pitch, through hole.
+                eg. Digi-Key 478-3193-ND, Jaycar RC5490 (optional if XBee is not used.)
+
+                Resistors: (all standard 1/4W through-hole resistors):
+                        1 x 4k7
+                        1 x 69R
+                        6 x 100k
+
+                3 x 16 pin IC sockets (optional)
+                2 x 16-pin 0.1" female header socket strip, for LCD
+                1 x 40-way 0.1" break-away pin header strip
+                1 x 28-way 0.1" break-away pin header strip
+
+                2 x 10-pin 2 mm female header sockets, eg. Digi-Key S5751-10-ND
+                (optional if XBee is not used.)

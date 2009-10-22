@@ -38,57 +38,59 @@ Arduino pin assignments:
 		Analog pins:
 		LDR analog input:			A0
 		Pot analog input:			A1
-		Momentary pushbutton input 1:		A2
-		Momentary pushbutton input 2:		A3
-
+		Multiplexed (analog) pushbutton input:	A2
 
 Parts List / Bill of Materials:
 -------------------------------
+
+1 x Arduino module (Arduino Duemilanove or similar)
+
+Resistors (All resistors standard 1/4 W or 1/2 W through-hole 5% or 1%:)
+
+R1, R3, R6, R8, R9, R10, R11:		100 k x 7
+
+R2:					100 R
+R4:					390 k
+R5:					220 k
+R7:					4.7 k
+R12:					69R
+
+IC1:                	4094N shift register IC, 16 pin DIP package.
+                	eg. Digi-Key 568-4484-5-ND; or Jaycar ZC4094.
+
+IC2:                	LD1117V33C 3.3V low-dropout voltage regulator, TO-220 package.
+                	(eg. Digi-Key 497-1492-5-ND)
+
+IC3:                	XBee module (optional) (choose whichever specific kind you like)
+
+IC4:                	Dallas DS18B20 1-Wire temperature sensor, TO-92 package
+                	(eg. Digi-Key DS18B20+PAR-ND)
+
+LCD:                	20x4 alphanumeric LCD display module (Cheap one from Hong Kong eBay seller)
+
+LDR1:                	light-dependent resistor, eg. Jaycar RD3480.
+
+LED1, LED2:             2 x 3 mm through-hole LEDs, colour to taste.
+
+D1, D2:                	2 x 1N4004 diodes, eg. Jaycar ZR1004.
+
+C2:                	100 nF monolithic capacitor, 5.08 mm pitch, through hole, eg. Jaycar RC5490.
+
+C1:			10 uF 16 V tantalum electrolytic capacitor, 5.08mm pitch through hole (eg. Jaycar RZ6648)
 		
+RY1, RY2:               2 x 5V reed relays, DIP package, eg. Jaycar SY4030, or Digi-Key HE100-ND
 
-                1 x XBee module (optional) (choose whichever specific kind you like)
+VR1:			1 x 100k linear pot, eg. Jaycar RP8518
+VR2:        	        1 x 100k linear trimpot, eg. Jaycar RT4366
 
-                1 x 20x4 alphanumeric LCD display module
+S1, S2, S3, S4:         4 x momentary pushbutton switches, eg. Digi-Key EG1861-ND
+                	(Button/cap to suit above Digi-Key part: Digi-Key EG4364-ND)
 
-                1 x Dallas DS18B20 1-Wire temperature sensor, TO-92 package
-                (eg. Digi-Key DS18B20+PAR-ND)
+			1 x 16 pin IC socket (eg. Jaycar PI6456)
+                	2 x 14 pin IC socket (eg. Jaycar PI6454)
+			2 x 10-pin 2.0 mm female header sockets, eg. Digi-Key S5751-10-ND
+			1 x 6-pin 0.1" Molex KK type locking PCB header (eg. Jaycar HM3416)
+			2 x 40-pin 0.1" break-away male pin header strip (eg. Jaycar HM3212)
+			1 x 40-pin 0.1" female pin header socket strip (eg. Sparkfun PRT-00115)
+			1 x Mini breadboard (Sparkfun PRT-07916) (optional)
 
-                1 x LD1117V33C 3.3V low-dropout voltage regulator, TO-220 package.
-                (eg. Digi-Key 497-1492-5-ND) (optional if XBee is not used.)
-
-                1 x 4094 shift register IC, 16 pin DIP package.
-                eg. Digi-Key 568-4484-5-ND; Jaycar ZC4094.
-
-                2 x 5V reed relays, DIP package, eg. Jaycar SY4030, Digi-Key HE100-ND
-
-                1 x light-dependant resistor, eg. Jaycar RD3480
-
-                1 x 100k linear pot, eg. Jaycar RP8518
-
-                1 x 100k linear trimpot, Jaycar RT4366
-
-                1 x 6-pin 2.54 mm Phoenix screw terminal wire-to-board connector
-                eg. Digi-Key 277-1277-ND (optional)
-
-                4 x momentary pushbutton switches, eg. Digi-Key EG1861-ND
-                (Button/cap to suit above Digi-Key part: Digi-Key EG4364-ND)
-
-                1 x 3 mm through-hole LED, colour to taste.
-
-                2 x 1N4004 diodes, eg. Jaycar ZR1004.
-
-                2 x 100 nF monolithic capacitor, 5.08 mm pitch, through hole.
-                eg. Digi-Key 478-3193-ND, Jaycar RC5490 (optional if XBee is not used.)
-
-                Resistors: (all standard 1/4W through-hole resistors):
-                        1 x 4k7
-                        1 x 69R
-                        6 x 100k
-
-                3 x 16 pin IC sockets (optional)
-                2 x 16-pin 0.1" female header socket strip, for LCD
-                1 x 40-way 0.1" break-away pin header strip
-                1 x 28-way 0.1" break-away pin header strip
-
-                2 x 10-pin 2 mm female header sockets, eg. Digi-Key S5751-10-ND
-                (optional if XBee is not used.)

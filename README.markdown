@@ -39,58 +39,46 @@ Arduino pin assignments:
 		LDR analog input:			A0
 		Pot analog input:			A1
 		Multiplexed (analog) pushbutton input:	A2
+                                                                     
+                                                                     
+                                                                     
+                                             
+-------------------------------------------------------------------------------------------------------
+The following is a bill-of-materials for the 'Pebble', all sourced from Digi-Key. Prices in USD.
+Does NOT INCLUDE LCD.
 
-Parts List / Bill of Materials:
--------------------------------
+Item					Digikey no.	Unit price				Subtotal	
+--------------------------------------------------------------------------------------------------------
+5 x 10 k resistors			10KQBK-ND		0.064 (minimum quantity 5)	0.320
+2 x 100 R resistors			100QBK-ND		0.064 (minimum quantity 5)	0.128
+2 x 100 k resistors			100KQBK-ND		0.064 (minimum quantity 5)	0.128
+1 x 39 k resistor			39KQBK-ND		0.064 (minimum quantity 5)	0.064
+1 x 22 k resistor			22KQBK-ND		0.064 (minimum quantity 5)	0.064
+1 x 4.7 k resistor			4.7KQBK-ND		0.064 (minimum quantity 5)	0.064
 
-1 x Arduino module (Arduino Duemilanove or similar)
+1 x 10 k trimpot			D4AA14-ND		0.36				0.36
+1 x 10 k pot				3310C-001-103L-ND	2.56				2.56
 
-Resistors (All resistors standard 1/4 W or 1/2 W through-hole 5% or 1%:)
+2 x 100 nF capacitor			399-4151-ND		0.16				0.32
+1 x 10 uF electrolytic			493-1144-ND		0.24				0.24
 
-R1, R3, R6, R8, R9, R10, R11:		100 k x 7
+1 x LDR					PDV-P8001-ND		2.14				2.14
+1 x DS18B20				DS18B20+PAR-ND		5.04				5.04
+1 x LD1117V33				497-1491-5-ND		0.78				0.78
+1 x 4094				497-1373-5-ND		0.53				0.53
 
-R2:					100 R
-R4:					390 k
-R5:					220 k
-R7:					4.7 k
-R12:					69R
+2 x 1N5819				1N5819FSCT-ND		0.37				0.74
+1 x 3 mm red LED			160-1708-ND		0.09				0.09
+1 x 3 mm green LED			160-1710-ND		0.09				0.09	
 
-IC1:                	4094N shift register IC, 16 pin DIP package.
-                	eg. Digi-Key 568-4484-5-ND; or Jaycar ZC4094.
-
-IC2:                	LD1117V33C 3.3V low-dropout voltage regulator, TO-220 package.
-                	(eg. Digi-Key 497-1492-5-ND)
-
-IC3:                	XBee module (optional) (choose whichever specific kind you like)
-
-IC4:                	Dallas DS18B20 1-Wire temperature sensor, TO-92 package
-                	(eg. Digi-Key DS18B20+PAR-ND)
-
-LCD:                	20x4 alphanumeric LCD display module (Cheap one from Hong Kong eBay seller)
-
-LDR1:                	light-dependent resistor, eg. Jaycar RD3480.
-
-LED1, LED2:             2 x 3 mm through-hole LEDs, colour to taste.
-
-D1, D2:                	2 x 1N4004 diodes, eg. Jaycar ZR1004.
-
-C2:                	100 nF monolithic capacitor, 5.08 mm pitch, through hole, eg. Jaycar RC5490.
-
-C1:			10 uF 16 V tantalum electrolytic capacitor, 5.08mm pitch through hole (eg. Jaycar RZ6648)
-		
-RY1, RY2:               2 x 5V reed relays, DIP package, eg. Jaycar SY4030, or Digi-Key HE100-ND
-
-VR1:			1 x 100k linear pot, eg. Jaycar RP8518
-VR2:        	        1 x 100k linear trimpot, eg. Jaycar RT4366
-
-S1, S2, S3, S4:         4 x momentary pushbutton switches, eg. Digi-Key EG1861-ND
-                	(Button/cap to suit above Digi-Key part: Digi-Key EG4364-ND)
-
-			1 x 16 pin IC socket (eg. Jaycar PI6456)
-                	2 x 14 pin IC socket (eg. Jaycar PI6454)
-			2 x 10-pin 2.0 mm female header sockets, eg. Digi-Key S5751-10-ND
-			1 x 6-pin 0.1" Molex KK type locking PCB header (eg. Jaycar HM3416)
-			2 x 40-pin 0.1" break-away male pin header strip (eg. Jaycar HM3212)
-			1 x 40-pin 0.1" female pin header socket strip (eg. Sparkfun PRT-00115)
-			1 x Mini breadboard (Sparkfun PRT-07916) (optional)
+4 x tactile pushbutton switches		CKN9074-ND		0.13				0.52
+2 x 14-pin IC socket (optional)		3M5462-ND		0.18				0.36
+1 x 16-pin IC socket			3M5463-ND		0.18				0.18
+2 x 10-pin 2 mm female headers		S5751-10-ND		1.05				2.10
+2 x 16-pin 0.1" female headers		S7049-ND		0.92				1.84
+2 x 30-pin breakaway header pin strip	S1212E-30-ND		1.45				2.90
+1 x 6-pin 0.1" right-angle header	S5481-ND		0.74				0.74
+2 x 5 v reed relays			HE100-ND		1.50				3.00
+-------------------------------------------------------------------------------------------------------
+									Total Price (per unit) 25.30
 

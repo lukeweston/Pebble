@@ -1,0 +1,45 @@
+
+The following is a bill-of-materials for 'Pebble', all sourced from Digi-Key.
+All prices in USD. Prices are (except for the resistors) for single quantities, without any volume pricing breaks.
+Does NOT INCLUDE LCD.
+
+			Item					Digikey no.	Unit price				Subtotal	
+-------------------------------------------------------------------------------------------------------------------------------------
+R1, R6, R9, R10, R11	5 x 10 k resistors			10KQBK-ND		0.064 (minimum quantity 5)	0.320
+R2, R12			2 x 100 R resistors			100QBK-ND		0.064 (minimum quantity 5)	0.128
+R3, R8			2 x 100 k resistors			100KQBK-ND		0.064 (minimum quantity 5)	0.128
+R4			1 x 39 k resistor			39KQBK-ND		0.064 (minimum quantity 5)	0.064
+R5			1 x 22 k resistor			22KQBK-ND		0.064 (minimum quantity 5)	0.064
+R7			1 x 4.7 k resistor			4.7KQBK-ND		0.064 (minimum quantity 5)	0.064
+
+VR1			1 x 10 k pot				3310C-001-103L-ND	2.56				2.56
+VR2			1 x 10 k trimpot			D4AA14-ND		0.36				0.36
+
+C1			1 x 10 uF electrolytic			493-1144-ND		0.24				0.24
+C2, C3			2 x 100 nF capacitor			399-4151-ND		0.16				0.32
+
+LDR1			1 x LDR					PDV-P8001-ND		2.14				2.14
+IC4			1 x DS18B20				DS18B20+PAR-ND		5.04				5.04
+IC2			1 x LD1117V33				497-1491-5-ND		0.78				0.78
+IC4			1 x 4094				497-1373-5-ND		0.53				0.53
+
+D1, D2			2 x 1N5819				1N5819FSCT-ND		0.37				0.74
+LED1			1 x 3 mm green LED			160-1710-ND		0.09				0.09	
+LED2			1 x 3 mm red LED			160-1708-ND		0.09				0.09
+
+X1			1 x 6-pin 0.1" right-angle header	S5481-ND		0.74				0.74
+S1-S4			4 x tactile pushbutton switches		CKN9074-ND		0.13				0.52
+RY1, RY2		2 x 5 v reed relays			HE100-ND		1.50				3.00
+LCD1, LCD2 headers 	2 x 16-pin 0.1" female headers		S7049-ND		0.92				1.84
+
+Socket for IC4		1 x 16-pin IC socket			3M5463-ND		0.18				0.18
+Socket for XBee		2 x 10-pin 2 mm female headers		S5751-10-ND		1.05				2.10
+Mounting headers	2 x 30-pin breakaway header pin strip	S1212E-30-ND		1.45				2.90
+Sockets for relays	2 x 14-pin IC socket (optional)		3M5462-ND		0.18				0.36
+
+------------------------------------------------------------------------------------------------------------------------------------
+												Total Price (per unit) 25.30
+# U3: XBee digital radio module
+# U1: Arduino (Duemilanove or similar)
+# HD44780 LCD display with appropriate form factor
+												
